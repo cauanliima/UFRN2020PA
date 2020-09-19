@@ -3,40 +3,15 @@
 int main()
 {
 
-    // Seja o seguinte trecho de programa:
+    //Mostre o que será impresso por programa supondo que i ocupa o endereço 4094 na memória.
+    // 4094 em hexadecimal e ffe
 
-    int i=3,j=5;
-    int *p, *q;
+    int i=5, *p;
     p = &i;
-    q = &j;
 
-printf("%d \n",3 - *p/(*q) + 7);
+    // EnderecoDei i+2 i i*3 i+4
+    //ffe 7 5 15 9
+    printf("%x %d %d %d %d", p,*p+2,**&p,3**p,**&p+4);
 
-/*
- *
-    Questao 2
-
-        Determine o valor das seguintes expressões:
-
-        p == &i;
-        *p - *q;
-        **&p;
-        3 - *p/(*q) + 7;
-
-    Teste logico que retorna 1 porque p que é um ponteiro, armazena o enderedo de i (&i)
-    p == &i;
-
-    Local onde p aponta (i=3) menos local onde q aponta (j=5) = -2
-    *p - *q;
-
-    Um ponteiro tem um enderedo que aponta para ele mesmo *&p
-    Ele mesmo quarda o endereco de um int
-    Desreferencia-lo aponta para o int i=3
-    **&p;
-
-
-    3 - int(3/5) + 7 = 10
-    3 - *p/(*q) + 7;
-*/
 
 }

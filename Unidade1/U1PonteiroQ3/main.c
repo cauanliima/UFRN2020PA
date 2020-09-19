@@ -2,16 +2,32 @@
 
 int main()
 {
+    //  Se i e j são variáveis inteiras e p e q ponteiros para int, quais das seguintes expressões de atribuição são ilegais?
+      int i=5,j=7;
+      int *p,*q;
 
-    //Mostre o que será impresso por programa supondo que i ocupa o endereço 4094 na memória.
-    // 4094 em hexadecimal e ffe
+       // ilegal
+    //    p = i;
 
-    int i=5, *p;
-    p = &i;
+        // legal
+        q = &j;
 
-    // EnderecoDei i+2 i i*3 i+4
-    //ffe 7 5 15 9
-    printf("%x %d %d %d %d", p,*p+2,**&p,3**p,**&p+4);
+        //legal
+        p = &*&i;
 
+        //ilegal
+    //    i = (*&)j;
+
+        //legal;
+        i = *&j;
+
+        //legal
+        i = *&*&j;
+
+        //legal mas nao util
+        q = *p;
+
+        //legal
+        i = (*p)++ + *q;
 
 }
