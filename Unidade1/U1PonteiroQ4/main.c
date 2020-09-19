@@ -17,19 +17,19 @@ int main()
       int   *p4;
       int   *p5;
 
-      /* (a) */
+      /* (a) */ //---------> 20
       valor = 10;
       p1 = &valor;
       *p1 = 20;
       printf("%d \n", valor);
 
-      /* (b) */
+      /* (b) */ //---------> 29.0
       temp = 26.5;
       p2 = &temp;
       *p2 = 29.0;
       printf("%.1f \n", temp);
 
-      /* (c) */
+      /* (c) */  //---------> P
       p3 = &nome[0];
       aux = *p3;
       printf("%c \n", aux);
@@ -82,5 +82,5 @@ int main()
       p5++;
       printf("%d \n", *p5);
       return(0);
-    }
+
 }
