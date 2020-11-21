@@ -28,7 +28,6 @@ public:
   void putEllipsoid(int xcenter, int ycenter, int zcenter, int rx, int ry, int rz);
   void cutEllipsoid(int xcenter, int ycenter, int zcenter, int rx, int ry, int rz);
   void writeOFF(char* filename);
-  void writeON(char* filename);
 };
 
 #endif // SCULPTOR_H

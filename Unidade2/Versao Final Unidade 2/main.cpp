@@ -7,6 +7,12 @@
 #include "strings.h"
 #include <sstream>
 
+/**
+ * @brief writeON Serve para entrar com um arquivo para gerar um sculptor
+ * @details
+ * @param filename
+ */
+
 void writeON(char *filename){
     std::ifstream fin;
     std::string str;
@@ -28,7 +34,7 @@ void writeON(char *filename){
     //fin.get(buffer,40);
 
     ss.clear();
-    std::getline(fin,str,' ');
+    std::getline(fin,str);
     ss.str(str);
     ss>>str;
 
@@ -47,17 +53,16 @@ void writeON(char *filename){
     }
 
      Sculptor creator(Xi,Yi,Zi);
-    fin.clear();
 
 
-   while(std::getline(fin,str,' '))
+   while(std::getline(fin,str))
    {
+
        ss.clear();
        ss.str(str);
        ss>>str;
 
-
-       if(str.compare("putvoxel"))
+       if(str.compare("putvoxel")==0)
     {
        ss>>Xi;
        ss>>Yi;
@@ -70,7 +75,7 @@ void writeON(char *filename){
        creator.putVoxel(Xi,Yi,Zi);
     }
 
-    if(str.compare("cutvoxel"))
+    if(str.compare("cutvoxel")==0)
     {
         ss>>Xi;
         ss>>Yi;
@@ -82,8 +87,9 @@ void writeON(char *filename){
         creator.setColor(r,g,b,a);
         creator.cutVoxel(Xi,Yi,Zi);
     }
-    if(str.compare("putbox"))
+    if(str.compare("putbox")==0)
     {
+
         ss>>Xi;
         ss>>Xf;
         ss>>Yi;
@@ -94,12 +100,14 @@ void writeON(char *filename){
         ss>>g;
         ss>>b;
         ss>>a;
+
         creator.setColor(r,g,b,a);
         creator.putBox(Xi,Xf,Yi,Yf,Zi,Zf);
 
     }
 
-    if(str.compare("cutbox"))
+
+    if(str.compare("cutbox")==0)
     {
         ss>>Xi;
         ss>>Xf;
@@ -114,7 +122,7 @@ void writeON(char *filename){
         creator.setColor(r,g,b,a);
         creator.cutBox(Xi,Xf,Yi,Yf,Zi,Zf);
     }
-    if(str.compare("putsphere"))
+    if(str.compare("putsphere")==0)
     {
         ss>>Xi;
         ss>>Yi;
@@ -128,7 +136,7 @@ void writeON(char *filename){
         creator.putSphere(Xi,Yi,Zi,rA);
     }
 
-    if(str.compare("cutsphere"))
+    if(str.compare("cutsphere")==0)
     {
         ss>>Xi;
         ss>>Yi;
@@ -142,7 +150,7 @@ void writeON(char *filename){
         creator.cutSphere(Xi,Yi,Zi,rA);
     }
 
-    if(str.compare("putellipsoid"))
+    if(str.compare("putellipsoid")==0)
     {
         ss>>Xi;
         ss>>Yi;
@@ -158,7 +166,7 @@ void writeON(char *filename){
         creator.putEllipsoid(Xi,Yi,Zi,rA,rB,rC);
     }
 
-    if(str.compare("cutellipsoid"))
+    if(str.compare("cutellipsoid")==0)
     {
         ss>>Xi;
         ss>>Yi;
@@ -173,13 +181,16 @@ void writeON(char *filename){
         creator.setColor(r,g,b,a);
         creator.putEllipsoid(Xi,Yi,Zi,rA,rB,rC);
     }
-    fin.clear();
-    }
+
+
+   }
 
 
      fin.close();
 
-     creator.writeOFF("Salvo.off");
+     std::cout<<"Aeee ta salvando\n";
+
+     creator.writeOFF("salvo.off");
 }
 
 
@@ -189,6 +200,10 @@ int main()
 {
 
  writeON("cauan.txt");
+
+
+  // Sculptor Test(2,2,2);
+  // Test.writeOFF("1234.off");
 
     return 0;
 }
