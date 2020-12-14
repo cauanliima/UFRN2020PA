@@ -7,7 +7,7 @@ class FiguraGeometrica
 protected:
     float r,g,b,a;
 public:
-    virtual ~FiguraGeometrica();
+    virtual ~FiguraGeometrica(){}
     virtual void draw(Sculptor &t) =0;
 };
 

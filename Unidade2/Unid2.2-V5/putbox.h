@@ -10,7 +10,6 @@ public:
            float r,float g,float b,float a);
 
     ~PutBox(){}
-
     void draw(Sculptor &t);
 };
 

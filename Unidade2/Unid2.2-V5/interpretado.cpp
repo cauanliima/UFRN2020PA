@@ -59,8 +59,6 @@ std::vector<FiguraGeometrica *> Interpretado::parse(char *filename)
         exit(1);
     }
 
-   //  Sculptor creator(Xi,Yi,Zi);
-
 
    while(std::getline(fin,str))
    {
@@ -172,4 +170,5 @@ std::vector<FiguraGeometrica *> Interpretado::parse(char *filename)
 
      fin.close();
 
+     return  (figs);
 }

@@ -9,7 +9,9 @@ class PutSphere:public FiguraGeometrica
 public:
     PutSphere(int xcenter, int ycenter, int zcenter, int radius,
                        float r, float g, float b, float a);
+
     ~PutSphere(){}
+
     void draw(Sculptor &t);
 };
 
