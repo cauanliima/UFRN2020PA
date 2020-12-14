@@ -172,7 +172,9 @@ debug/interpretado.o: ../Unid2.2-V5/interpretado.cpp ../Unid2.2-V5/interpretado.
 		../Unid2.2-V5/cutellipsoid.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\interpretado.o ..\Unid2.2-V5\interpretado.cpp
 
-debug/main.o: ../Unid2.2-V5/main.cpp ../Unid2.2-V5/sculptor.h
+debug/main.o: ../Unid2.2-V5/main.cpp ../Unid2.2-V5/sculptor.h \
+		../Unid2.2-V5/interpretado.h \
+		../Unid2.2-V5/figurageometrica.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\main.o ..\Unid2.2-V5\main.cpp
 
 debug/putbox.o: ../Unid2.2-V5/putbox.cpp ../Unid2.2-V5/putbox.h \

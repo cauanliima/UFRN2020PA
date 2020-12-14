@@ -172,7 +172,9 @@ release/interpretado.o: ../Unid2.2-V5/interpretado.cpp ../Unid2.2-V5/interpretad
 		../Unid2.2-V5/cutellipsoid.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\interpretado.o ..\Unid2.2-V5\interpretado.cpp
 
-release/main.o: ../Unid2.2-V5/main.cpp ../Unid2.2-V5/sculptor.h
+release/main.o: ../Unid2.2-V5/main.cpp ../Unid2.2-V5/sculptor.h \
+		../Unid2.2-V5/interpretado.h \
+		../Unid2.2-V5/figurageometrica.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\main.o ..\Unid2.2-V5\main.cpp
 
 release/putbox.o: ../Unid2.2-V5/putbox.cpp ../Unid2.2-V5/putbox.h \

@@ -34,7 +34,7 @@ std::vector<FiguraGeometrica *> Interpretado::parse(char *filename)
 
     if(!fin.is_open())
     {
-        printf("Er 003 \n");
+        printf("Er 003 Arq n aberto\n");
         exit(1);
     }
 

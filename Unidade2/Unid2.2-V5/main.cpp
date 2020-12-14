@@ -18,11 +18,15 @@ int main()
     Interpretado ImpEscultura;
     std::vector<FiguraGeometrica*> figs;
 
+    figs = ImpEscultura.parse("cauan.txt");
     Escultura=new Sculptor(ImpEscultura.getDimX(),ImpEscultura.getDimY(),ImpEscultura.getDimZ());
-    figs = ImpEscultura.parse("dados.txt");
+
     for(size_t i=0;i<figs.size();i++)
-        figs[i]->draw(*Escultura);
-    Escultura->writeOFF("Salvo.off");
+    {figs[i]->draw(*Escultura);
+    std::cout<<"Aqui deu certo";
+    }
+
+    Escultura->writeOFF("salvo.off");
 
 
     return 0;
