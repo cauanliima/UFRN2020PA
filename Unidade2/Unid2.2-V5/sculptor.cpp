@@ -94,86 +94,6 @@ void Sculptor::cutVoxel(int x, int y, int z)
 }
 
 
-/*
-
-void Sculptor::putVoxel(int x, int y, int z)
-{
-    if(x>=0&&x<nx && y>=0&&y<ny && z>=0&&z<nz)
-   { v[x][y][z].r=r;
-    v[x][y][z].g=g;
-    v[x][y][z].b=b;
-    v[x][y][z].isOn=true;
-    v[x][y][z].a=a;
-}
-}
-
-void Sculptor::cutVoxel(int x, int y, int z)
-{
-    if(x>=0&&x<nx && y>=0&&y<ny && z>=0&&z<nz)
-    v[x][y][z].isOn=false;
-}
-
-/*
-void Sculptor::putBox(int x0, int x1, int y0, int y1, int z0, int z1)
-{
-
-    for(int i=x0;i<x1;i++)
-        for(int j=y0;j<y1;j++)
-            for(int k=z0;k<z1;k++)
-                putVoxel(i,j,k);   
-}
-
-void Sculptor::cutBox(int x0, int x1, int y0, int y1, int z0, int z1)
-{
-
-    for(int i=x0;i<x1;i++)
-        for(int j=y0;j<y1;j++)
-            for(int k=z0;k<z1;k++)
-                cutVoxel(i,j,k);  
-}
-
-void Sculptor::putSphere(int xcenter, int ycenter, int zcenter, int radius){
-
-    if(radius<=0)
-           exit(1);
-
-    for(int i=xcenter-radius; i<xcenter+radius;i++)
-        for(int j=ycenter-radius;j<ycenter+radius;j++)
-            for(int k=zcenter-radius;k<zcenter+radius;k++)
-               if((pow2(xcenter-i)+pow2(ycenter-j)+pow2(zcenter-k))<pow2(radius))
-                    putVoxel(i,j,k);
-
-}
-void Sculptor::cutSphere(int xcenter, int ycenter, int zcenter, int radius){
-
-    if(radius<=0)
-           exit(1);
-
- for(int i=xcenter-radius; i<xcenter+radius;i++)
-     for(int j=ycenter-radius;j<ycenter+radius;j++)
-         for(int k=zcenter-radius;k<zcenter+radius;k++)
-               if((pow2(xcenter-i)+pow2(ycenter-j)+pow2(zcenter-k))<pow2(radius))
-                    cutVoxel(i,j,k);
-
-}
-void Sculptor::putEllipsoid(int xcenter, int ycenter, int zcenter, int rx, int ry, int rz){
-
-
-    for(int i=xcenter-rx; i<xcenter+rx;i++)
-        for(int j=ycenter-ry;j<ycenter+ry;j++)
-            for(int k=zcenter-rz;k<zcenter+rz;k++)
-                if((pow2(xcenter-i)/pow2(rx)+pow2(ycenter-j)/pow2(ry)+pow2(zcenter-k)/pow2(rz)) < 1)
-                    putVoxel(i,j,k);
-
-}
-void Sculptor::cutEllipsoid(int xcenter, int ycenter, int zcenter, int rx, int ry, int rz){
-
-    for(int i=xcenter-rx; i<xcenter+rx;i++)
-        for(int j=ycenter-ry;j<ycenter+ry;j++)
-            for(int k=zcenter-rz;k<zcenter+rz;k++)
-                if((pow2(xcenter-i)/pow2(rx)+pow2(ycenter-j)/pow2(ry)+pow2(zcenter-k)/pow2(rz))<1)
-                    cutVoxel(i,j,k);
-}
 void Sculptor::writeOFF(char* filename){
 
     std::ofstream fout;
@@ -283,5 +203,3 @@ void Sculptor::writeOFF(char* filename){
 
     fout.close();
 }
-
-*/

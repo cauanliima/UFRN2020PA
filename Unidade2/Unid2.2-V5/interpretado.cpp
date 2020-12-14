@@ -170,5 +170,5 @@ std::vector<FiguraGeometrica *> Interpretado::parse(char *filename)
 
      fin.close();
 
-     return  (figs);
+     return  figs;
 }
