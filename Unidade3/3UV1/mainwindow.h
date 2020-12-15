@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "plotter.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -12,8 +13,19 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
+    bool putIsOn=true;
+
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+
+public slots:
+    void exit(){}
+
+private slots:
+
+    void on_ButtonPutCut_released();
+
+    void on_radioVoxel_pressed();
 
 private:
     Ui::MainWindow *ui;
