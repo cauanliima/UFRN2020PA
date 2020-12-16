@@ -31,7 +31,3 @@ void MainWindow::on_ButtonPutCut_released()
     }
 }
 
-void MainWindow::on_radioVoxel_pressed()
-{
-
-}

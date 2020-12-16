@@ -61,7 +61,7 @@ public:
     QRadioButton *radioBox;
     QRadioButton *radioSphere;
     QPushButton *ButtonPutCut;
-    QWidget *widget1;
+    QWidget *layoutWidget3;
     QVBoxLayout *verticalLayout;
     QHBoxLayout *horizontalLayout_R;
     QSlider *horizontalSliderR;
@@ -210,22 +210,23 @@ public:
 
         verticalLayout_2->addWidget(ButtonPutCut);
 
-        widget1 = new QWidget(centralwidget);
-        widget1->setObjectName(QString::fromUtf8("widget1"));
-        widget1->setGeometry(QRect(14, 260, 144, 116));
-        verticalLayout = new QVBoxLayout(widget1);
+        layoutWidget3 = new QWidget(centralwidget);
+        layoutWidget3->setObjectName(QString::fromUtf8("layoutWidget3"));
+        layoutWidget3->setGeometry(QRect(14, 260, 144, 116));
+        verticalLayout = new QVBoxLayout(layoutWidget3);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         verticalLayout->setContentsMargins(0, 0, 0, 0);
         horizontalLayout_R = new QHBoxLayout();
         horizontalLayout_R->setObjectName(QString::fromUtf8("horizontalLayout_R"));
-        horizontalSliderR = new QSlider(widget1);
+        horizontalSliderR = new QSlider(layoutWidget3);
         horizontalSliderR->setObjectName(QString::fromUtf8("horizontalSliderR"));
         horizontalSliderR->setMaximum(255);
+        horizontalSliderR->setValue(100);
         horizontalSliderR->setOrientation(Qt::Horizontal);
 
         horizontalLayout_R->addWidget(horizontalSliderR);
 
-        spinBoxR = new QSpinBox(widget1);
+        spinBoxR = new QSpinBox(layoutWidget3);
         spinBoxR->setObjectName(QString::fromUtf8("spinBoxR"));
         spinBoxR->setMinimumSize(QSize(50, 0));
         spinBoxR->setMaximumSize(QSize(70, 16777215));
@@ -239,15 +240,16 @@ public:
 
         horizontalLayout_G = new QHBoxLayout();
         horizontalLayout_G->setObjectName(QString::fromUtf8("horizontalLayout_G"));
-        horizontalSliderG = new QSlider(widget1);
+        horizontalSliderG = new QSlider(layoutWidget3);
         horizontalSliderG->setObjectName(QString::fromUtf8("horizontalSliderG"));
         horizontalSliderG->setMinimumSize(QSize(50, 0));
         horizontalSliderG->setMaximum(255);
+        horizontalSliderG->setValue(100);
         horizontalSliderG->setOrientation(Qt::Horizontal);
 
         horizontalLayout_G->addWidget(horizontalSliderG);
 
-        spinBoxG = new QSpinBox(widget1);
+        spinBoxG = new QSpinBox(layoutWidget3);
         spinBoxG->setObjectName(QString::fromUtf8("spinBoxG"));
         spinBoxG->setMinimumSize(QSize(50, 0));
         spinBoxG->setMaximumSize(QSize(70, 16777215));
@@ -261,14 +263,15 @@ public:
 
         horizontalLayout_B = new QHBoxLayout();
         horizontalLayout_B->setObjectName(QString::fromUtf8("horizontalLayout_B"));
-        horizontalSliderB = new QSlider(widget1);
+        horizontalSliderB = new QSlider(layoutWidget3);
         horizontalSliderB->setObjectName(QString::fromUtf8("horizontalSliderB"));
         horizontalSliderB->setMaximum(255);
+        horizontalSliderB->setValue(100);
         horizontalSliderB->setOrientation(Qt::Horizontal);
 
         horizontalLayout_B->addWidget(horizontalSliderB);
 
-        spinBoxB = new QSpinBox(widget1);
+        spinBoxB = new QSpinBox(layoutWidget3);
         spinBoxB->setObjectName(QString::fromUtf8("spinBoxB"));
         spinBoxB->setMinimumSize(QSize(50, 0));
         spinBoxB->setMaximumSize(QSize(70, 16777215));
@@ -282,14 +285,15 @@ public:
 
         horizontalLayout_A = new QHBoxLayout();
         horizontalLayout_A->setObjectName(QString::fromUtf8("horizontalLayout_A"));
-        horizontalSliderA = new QSlider(widget1);
+        horizontalSliderA = new QSlider(layoutWidget3);
         horizontalSliderA->setObjectName(QString::fromUtf8("horizontalSliderA"));
         horizontalSliderA->setMaximum(255);
+        horizontalSliderA->setValue(100);
         horizontalSliderA->setOrientation(Qt::Horizontal);
 
         horizontalLayout_A->addWidget(horizontalSliderA);
 
-        spinBoxA = new QSpinBox(widget1);
+        spinBoxA = new QSpinBox(layoutWidget3);
         spinBoxA->setObjectName(QString::fromUtf8("spinBoxA"));
         spinBoxA->setMinimumSize(QSize(50, 0));
         spinBoxA->setMaximumSize(QSize(70, 16777215));

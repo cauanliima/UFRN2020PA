@@ -15,10 +15,11 @@ void Plotter::paintEvent(QPaintEvent *event)
     //QPen pen;
     //Aqui muda a cor do quadradro, esta funfando
     brush.setColor(QColor(100,100,0,255));
-    //Queria colocar: brush.setColor(QColor(r,g,b,a));
+    //Queria colocar:
+    brush.setColor(QColor(r,g,b,a));
     // r,g,b,a sao variaveis da classe, alteradas pelas funcoes auxiliares que estao conectadas
     // na mainwindow
-    brush.setStyle(Qt::SolidPattern);
+    // brush.setStyle(Qt::SolidPattern);
     painter.setBrush(brush);
     painter.drawRect(0,0,width(),height());
 

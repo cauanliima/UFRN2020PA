@@ -236,7 +236,7 @@
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>14</x>
@@ -252,6 +252,9 @@
         <widget class="QSlider" name="horizontalSliderR">
          <property name="maximum">
           <number>255</number>
+         </property>
+         <property name="value">
+          <number>100</number>
          </property>
          <property name="orientation">
           <enum>Qt::Horizontal</enum>
@@ -295,6 +298,9 @@
          <property name="maximum">
           <number>255</number>
          </property>
+         <property name="value">
+          <number>100</number>
+         </property>
          <property name="orientation">
           <enum>Qt::Horizontal</enum>
          </property>
@@ -331,6 +337,9 @@
          <property name="maximum">
           <number>255</number>
          </property>
+         <property name="value">
+          <number>100</number>
+         </property>
          <property name="orientation">
           <enum>Qt::Horizontal</enum>
          </property>
@@ -366,6 +375,9 @@
         <widget class="QSlider" name="horizontalSliderA">
          <property name="maximum">
           <number>255</number>
+         </property>
+         <property name="value">
+          <number>100</number>
          </property>
          <property name="orientation">
           <enum>Qt::Horizontal</enum>
@@ -633,7 +645,7 @@
     </hint>
     <hint type="destinationlabel">
      <x>276</x>
-     <y>296</y>
+     <y>317</y>
     </hint>
    </hints>
   </connection>

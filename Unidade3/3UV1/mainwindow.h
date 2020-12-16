@@ -25,8 +25,6 @@ private slots:
 
     void on_ButtonPutCut_released();
 
-    void on_radioVoxel_pressed();
-
 private:
     Ui::MainWindow *ui;
 };
