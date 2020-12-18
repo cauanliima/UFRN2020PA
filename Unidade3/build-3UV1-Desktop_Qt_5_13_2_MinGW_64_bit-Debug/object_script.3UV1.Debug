@@ -1,0 +1,16 @@
+debug/cutbox.o
+debug/cutellipsoid.o
+debug/cutsphere.o
+debug/cutvoxel.o
+debug/main.o
+debug/mainwindow.o
+debug/novaestrutura.o
+debug/plotter.o
+debug/putbox.o
+debug/putellipsoid.o
+debug/putsphere.o
+debug/putvoxel.o
+debug/sculptor.o
+debug/moc_mainwindow.o
+debug/moc_novaestrutura.o
+debug/moc_plotter.o

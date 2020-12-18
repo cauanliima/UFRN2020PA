@@ -9,414 +9,435 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>668</width>
-    <height>458</height>
+    <width>711</width>
+    <height>924</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="Plotter" name="widget" native="true">
-    <property name="enabled">
-     <bool>true</bool>
-    </property>
-    <property name="geometry">
-     <rect>
-      <x>200</x>
-      <y>280</y>
-      <width>80</width>
-      <height>80</height>
-     </rect>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>80</width>
-      <height>80</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>80</width>
-      <height>80</height>
-     </size>
-    </property>
-   </widget>
-   <widget class="QTableWidget" name="tableWidget">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>256</width>
-      <height>192</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QWidget" name="layoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>11</x>
-      <y>233</y>
-      <width>648</width>
-      <height>22</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout_7">
-     <item>
-      <widget class="QSpinBox" name="spinBoxBar">
-       <property name="minimumSize">
-        <size>
-         <width>40</width>
-         <height>0</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>40</width>
-         <height>16777215</height>
-        </size>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QScrollBar" name="horizontalScrollBar">
-       <property name="minimumSize">
-        <size>
-         <width>600</width>
-         <height>20</height>
-        </size>
-       </property>
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="layoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>499</x>
-      <y>262</y>
-      <width>159</width>
-      <height>82</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout_3">
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout">
-       <item>
-        <widget class="QLineEdit" name="lineEdit">
-         <property name="enabled">
-          <bool>true</bool>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QSpinBox" name="spinBox_1">
-         <property name="enabled">
-          <bool>true</bool>
-         </property>
-         <property name="minimumSize">
-          <size>
-           <width>50</width>
-           <height>0</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>70</width>
-           <height>16777215</height>
-          </size>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_5">
-       <item>
-        <widget class="QLineEdit" name="lineEdit_3">
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QSpinBox" name="spinBox_3">
-         <property name="minimumSize">
-          <size>
-           <width>50</width>
-           <height>0</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>70</width>
-           <height>16777215</height>
-          </size>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_4">
-       <item>
-        <widget class="QLineEdit" name="lineEdit_2">
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QSpinBox" name="spinBox_2">
-         <property name="minimumSize">
-          <size>
-           <width>50</width>
-           <height>0</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>70</width>
-           <height>16777215</height>
-          </size>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="layoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>330</x>
-      <y>262</y>
-      <width>163</width>
-      <height>50</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout_2">
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_3">
-       <item>
-        <widget class="QRadioButton" name="radioVoxel">
-         <property name="text">
-          <string>Voxel</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QRadioButton" name="radioBox">
-         <property name="text">
-          <string>Box</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QRadioButton" name="radioSphere">
-         <property name="text">
-          <string>Sphere</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <widget class="QPushButton" name="ButtonPutCut">
-       <property name="text">
-        <string>PutObj</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="layoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>14</x>
-      <y>260</y>
-      <width>144</width>
-      <height>116</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout">
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_R">
-       <item>
-        <widget class="QSlider" name="horizontalSliderR">
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>100</number>
-         </property>
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QSpinBox" name="spinBoxR">
-         <property name="minimumSize">
-          <size>
-           <width>50</width>
-           <height>0</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>70</width>
-           <height>16777215</height>
-          </size>
-         </property>
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>100</number>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_G">
-       <item>
-        <widget class="QSlider" name="horizontalSliderG">
-         <property name="minimumSize">
-          <size>
-           <width>50</width>
-           <height>0</height>
-          </size>
-         </property>
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>100</number>
-         </property>
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QSpinBox" name="spinBoxG">
-         <property name="minimumSize">
-          <size>
-           <width>50</width>
-           <height>0</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>70</width>
-           <height>16777215</height>
-          </size>
-         </property>
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>100</number>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_B">
-       <item>
-        <widget class="QSlider" name="horizontalSliderB">
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>100</number>
-         </property>
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QSpinBox" name="spinBoxB">
-         <property name="minimumSize">
-          <size>
-           <width>50</width>
-           <height>0</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>70</width>
-           <height>16777215</height>
-          </size>
-         </property>
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>100</number>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_A">
-       <item>
-        <widget class="QSlider" name="horizontalSliderA">
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>100</number>
-         </property>
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QSpinBox" name="spinBoxA">
-         <property name="minimumSize">
-          <size>
-           <width>50</width>
-           <height>0</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>70</width>
-           <height>16777215</height>
-          </size>
-         </property>
-         <property name="maximum">
-          <number>255</number>
-         </property>
-         <property name="value">
-          <number>100</number>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-    </layout>
-   </widget>
+   <layout class="QHBoxLayout" name="horizontalLayout_8">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <widget class="QTableWidget" name="MatrizVoxel">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="rowCount">
+         <number>10</number>
+        </property>
+        <property name="columnCount">
+         <number>10</number>
+        </property>
+        <attribute name="horizontalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderCascadingSectionResizes">
+         <bool>false</bool>
+        </attribute>
+        <row/>
+        <row/>
+        <row/>
+        <row/>
+        <row/>
+        <row/>
+        <row/>
+        <row/>
+        <row/>
+        <row/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <item>
+         <widget class="QSpinBox" name="spinBoxBar">
+          <property name="minimumSize">
+           <size>
+            <width>40</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>40</width>
+            <height>16777215</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QScrollBar" name="horizontalScrollBar">
+          <property name="minimumSize">
+           <size>
+            <width>600</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_R">
+              <item>
+               <widget class="QSlider" name="horizontalSliderR">
+                <property name="maximum">
+                 <number>255</number>
+                </property>
+                <property name="value">
+                 <number>100</number>
+                </property>
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QSpinBox" name="spinBoxR">
+                <property name="minimumSize">
+                 <size>
+                  <width>50</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>70</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="maximum">
+                 <number>255</number>
+                </property>
+                <property name="value">
+                 <number>100</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_G">
+              <item>
+               <widget class="QSlider" name="horizontalSliderG">
+                <property name="minimumSize">
+                 <size>
+                  <width>50</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="maximum">
+                 <number>255</number>
+                </property>
+                <property name="value">
+                 <number>100</number>
+                </property>
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QSpinBox" name="spinBoxG">
+                <property name="minimumSize">
+                 <size>
+                  <width>50</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>70</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="maximum">
+                 <number>255</number>
+                </property>
+                <property name="value">
+                 <number>100</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_B">
+              <item>
+               <widget class="QSlider" name="horizontalSliderB">
+                <property name="maximum">
+                 <number>255</number>
+                </property>
+                <property name="value">
+                 <number>100</number>
+                </property>
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QSpinBox" name="spinBoxB">
+                <property name="minimumSize">
+                 <size>
+                  <width>50</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>70</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="maximum">
+                 <number>255</number>
+                </property>
+                <property name="value">
+                 <number>100</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_A">
+              <item>
+               <widget class="QSlider" name="horizontalSliderA">
+                <property name="maximum">
+                 <number>255</number>
+                </property>
+                <property name="value">
+                 <number>100</number>
+                </property>
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QSpinBox" name="spinBoxA">
+                <property name="minimumSize">
+                 <size>
+                  <width>50</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>70</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="maximum">
+                 <number>255</number>
+                </property>
+                <property name="value">
+                 <number>100</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>18</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="Plotter" name="widget" native="true">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>80</width>
+              <height>80</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <widget class="QRadioButton" name="radioVoxel">
+              <property name="text">
+               <string>Voxel</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="radioBox">
+              <property name="text">
+               <string>Box</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="radioSphere">
+              <property name="text">
+               <string>Sphere</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QPushButton" name="ButtonPutCut">
+            <property name="text">
+             <string>PutObj</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QLineEdit" name="lineEdit">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="spinBox_1">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>50</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>70</width>
+                <height>16777215</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <item>
+             <widget class="QLineEdit" name="lineEdit_3">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="spinBox_3">
+              <property name="minimumSize">
+               <size>
+                <width>50</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>70</width>
+                <height>16777215</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <item>
+             <widget class="QLineEdit" name="lineEdit_2">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="spinBox_2">
+              <property name="minimumSize">
+               <size>
+                <width>50</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>70</width>
+                <height>16777215</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>668</width>
+     <width>711</width>
      <height>21</height>
     </rect>
    </property>
@@ -465,11 +486,11 @@
    <hints>
     <hint type="sourcelabel">
      <x>26</x>
-     <y>274</y>
+     <y>766</y>
     </hint>
     <hint type="destinationlabel">
-     <x>135</x>
-     <y>274</y>
+     <x>181</x>
+     <y>766</y>
     </hint>
    </hints>
   </connection>
@@ -480,12 +501,12 @@
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>235</x>
-     <y>274</y>
+     <x>281</x>
+     <y>766</y>
     </hint>
     <hint type="destinationlabel">
      <x>24</x>
-     <y>274</y>
+     <y>766</y>
     </hint>
    </hints>
   </connection>
@@ -513,11 +534,11 @@
    <hints>
     <hint type="sourcelabel">
      <x>80</x>
-     <y>298</y>
+     <y>799</y>
     </hint>
     <hint type="destinationlabel">
-     <x>117</x>
-     <y>297</y>
+     <x>153</x>
+     <y>798</y>
     </hint>
    </hints>
   </connection>
@@ -529,11 +550,11 @@
    <hints>
     <hint type="sourcelabel">
      <x>68</x>
-     <y>316</y>
+     <y>829</y>
     </hint>
     <hint type="destinationlabel">
-     <x>126</x>
-     <y>328</y>
+     <x>153</x>
+     <y>828</y>
     </hint>
    </hints>
   </connection>
@@ -545,11 +566,11 @@
    <hints>
     <hint type="sourcelabel">
      <x>52</x>
-     <y>349</y>
+     <y>859</y>
     </hint>
     <hint type="destinationlabel">
-     <x>129</x>
-     <y>344</y>
+     <x>153</x>
+     <y>858</y>
     </hint>
    </hints>
   </connection>
@@ -560,12 +581,12 @@
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>131</x>
-     <y>287</y>
+     <x>153</x>
+     <y>798</y>
     </hint>
     <hint type="destinationlabel">
      <x>70</x>
-     <y>292</y>
+     <y>799</y>
     </hint>
    </hints>
   </connection>
@@ -576,12 +597,12 @@
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>131</x>
-     <y>317</y>
+     <x>153</x>
+     <y>828</y>
     </hint>
     <hint type="destinationlabel">
      <x>45</x>
-     <y>326</y>
+     <y>829</y>
     </hint>
    </hints>
   </connection>
@@ -592,12 +613,12 @@
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>136</x>
-     <y>346</y>
+     <x>153</x>
+     <y>858</y>
     </hint>
     <hint type="destinationlabel">
      <x>62</x>
-     <y>348</y>
+     <y>859</y>
     </hint>
    </hints>
   </connection>
@@ -609,11 +630,11 @@
    <hints>
     <hint type="sourcelabel">
      <x>65</x>
-     <y>383</y>
+     <y>889</y>
     </hint>
     <hint type="destinationlabel">
-     <x>115</x>
-     <y>384</y>
+     <x>153</x>
+     <y>888</y>
     </hint>
    </hints>
   </connection>
@@ -624,12 +645,12 @@
    <slot>setValue(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>135</x>
-     <y>384</y>
+     <x>153</x>
+     <y>888</y>
     </hint>
     <hint type="destinationlabel">
      <x>77</x>
-     <y>374</y>
+     <y>889</y>
     </hint>
    </hints>
   </connection>
@@ -640,12 +661,12 @@
    <slot>setColorR(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>133</x>
-     <y>291</y>
+     <x>153</x>
+     <y>798</y>
     </hint>
     <hint type="destinationlabel">
-     <x>276</x>
-     <y>317</y>
+     <x>262</x>
+     <y>831</y>
     </hint>
    </hints>
   </connection>
@@ -656,12 +677,12 @@
    <slot>setColorG(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>134</x>
-     <y>318</y>
+     <x>153</x>
+     <y>828</y>
     </hint>
     <hint type="destinationlabel">
-     <x>269</x>
-     <y>326</y>
+     <x>255</x>
+     <y>840</y>
     </hint>
    </hints>
   </connection>
@@ -672,12 +693,12 @@
    <slot>setColorB(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>130</x>
-     <y>357</y>
+     <x>153</x>
+     <y>858</y>
     </hint>
     <hint type="destinationlabel">
-     <x>269</x>
-     <y>353</y>
+     <x>255</x>
+     <y>867</y>
     </hint>
    </hints>
   </connection>
@@ -688,12 +709,12 @@
    <slot>setColorA(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>143</x>
-     <y>389</y>
+     <x>153</x>
+     <y>888</y>
     </hint>
     <hint type="destinationlabel">
-     <x>261</x>
-     <y>322</y>
+     <x>247</x>
+     <y>836</y>
     </hint>
    </hints>
   </connection>

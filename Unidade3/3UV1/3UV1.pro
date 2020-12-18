@@ -16,16 +16,38 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    cutbox.cpp \
+    cutellipsoid.cpp \
+    cutsphere.cpp \
+    cutvoxel.cpp \
     main.cpp \
     mainwindow.cpp \
-    plotter.cpp
+    novaestrutura.cpp \
+    plotter.cpp \
+    putbox.cpp \
+    putellipsoid.cpp \
+    putsphere.cpp \
+    putvoxel.cpp \
+    sculptor.cpp
 
 HEADERS += \
+    PutVoxel.h \
+    cutbox.h \
+    cutellipsoid.h \
+    cutsphere.h \
+    cutvoxel.h \
+    figurageometrica.h \
     mainwindow.h \
-    plotter.h
+    novaestrutura.h \
+    plotter.h \
+    putbox.h \
+    putellipsoid.h \
+    putsphere.h \
+    sculptor.h
 
 FORMS += \
-    mainwindow.ui
+    mainwindow.ui \
+    novaestrutura.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

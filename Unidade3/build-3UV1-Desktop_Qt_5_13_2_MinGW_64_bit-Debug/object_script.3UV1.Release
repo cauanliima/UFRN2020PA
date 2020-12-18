@@ -1,0 +1,16 @@
+release/cutbox.o
+release/cutellipsoid.o
+release/cutsphere.o
+release/cutvoxel.o
+release/main.o
+release/mainwindow.o
+release/novaestrutura.o
+release/plotter.o
+release/putbox.o
+release/putellipsoid.o
+release/putsphere.o
+release/putvoxel.o
+release/sculptor.o
+release/moc_mainwindow.o
+release/moc_novaestrutura.o
+release/moc_plotter.o
